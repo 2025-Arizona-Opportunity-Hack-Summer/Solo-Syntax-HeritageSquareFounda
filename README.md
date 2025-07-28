@@ -1,3 +1,4 @@
+
 # Heritage Square File Assistant 🗂️🤖
 
 A smart document assistant that integrates AI with Google Drive, enabling natural language control over your cloud files. Designed for non-technical users and teams to interact with Drive using a simple, intuitive chatbot UI powered by **FastAPI**, **React**, **Google Drive API**, and **Gemini 1.5**.
@@ -19,35 +20,13 @@ Interact with your files using plain English commands such as:
 Supports reading and displaying:
 - `.txt`, `.json`, `.csv`
 
-### ✏️ Rename Files
-Rename files using:
-```
-
-rename \<old\_name> to \<new\_name>
-
-```
-
-### 📁 Move Files
-```
-
-move \<file\_name> to \<folder\_name>
-
-````
-
-### 🏷️ Tag Files
-Auto-tagging based on file content.
-
-### 🧠 Categorize Files
-Categorization using AI-powered prompts.
-
-### 📝 Summarize Files
-Summarize long text files instantly.
-
-### 📃 List Files
-List available files in the connected Google Drive.
-
-### 📤 Upload Files
-Upload local files directly to Google Drive using the UI.
+### ✏️ Rename Files  
+### 📁 Move Files  
+### 🏷️ Tag Files  
+### 🧠 Categorize Files  
+### 📝 Summarize Files  
+### 📃 List Files  
+### 📤 Upload Files  
 
 ---
 
@@ -55,11 +34,40 @@ Upload local files directly to Google Drive using the UI.
 
 Here’s how different teams can benefit from the AI assistant:
 
-- **Nonprofits**: Quickly organize donation forms, event flyers, grant applications, and compliance documents.
-- **Marketing Teams**: Categorize, tag, and move content assets into the right campaigns without technical steps.
-- **Academic Institutions**: Help faculty or admin staff manage departmental files or categorize research data.
-- **Small Businesses**: Upload invoices, summarize financial reports, and retrieve contracts on demand.
-- **Event Planning**: Upload, rename, and tag itineraries, checklists, and brochures efficiently.
+- **Nonprofits**: Organize donation forms, event flyers, grant applications, and compliance docs.
+- **Marketing**: Categorize and manage campaign assets.
+- **Academia**: Sort and retrieve research or departmental files.
+- **Small Business**: Upload, rename, and read invoices or contracts.
+- **Event Planners**: Tag and manage itineraries and logistics documents.
+
+---
+
+## 📂 Project Structure
+
+```
+
+heritage-file-assistant/
+│
+├── frontend/                       # React-based chatbot UI
+│   ├── public/
+│   ├── src/
+│   │   ├── App.js                 # Main UI logic and message handling
+│   │   └── ...
+│   └── package.json
+│
+├── backend/
+│   └── gsuite/
+│       ├── Backend/
+│       │   ├── chat\_api.py       # FastAPI app with Gemini and Google Drive logic
+│       │   └── agent.py          # Utility functions to access Drive (read, move, tag, etc.)
+│       └── credentials/
+│           └── .gdrive-server-credentials.json  # Google service account JSON
+│
+├── .env                           # Contains GEMINI\_API\_KEY
+├── requirements.txt               # Python dependencies
+├── README.md
+
+````
 
 ---
 
@@ -118,8 +126,9 @@ npm start
 
 ## 📬 Contact
 
-Project Lead: [Bhavagna Shreya Bandaru](mailto:bbandar5@asu.edu)
+Project Lead: [Bhavagna Shreya Bandaru]
 
+---
 
 ## 📜 License
 
