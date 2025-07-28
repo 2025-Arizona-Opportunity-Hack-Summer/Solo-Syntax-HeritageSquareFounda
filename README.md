@@ -120,7 +120,6 @@ npm start
 
 Project Lead: [Bhavagna Shreya Bandaru](mailto:bbandar5@asu.edu)
 
----
 
 ## 📜 License
 
